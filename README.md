@@ -6,12 +6,17 @@
 ````
  docker-compose up
 ````
-либо локально создать postgresSQL базу с такими данными: 
+2) либо локально создать postgresSQL базу с такими данными: 
 ````
     user: user
     password: password
     database: postgres
     url: jdbc:postgresql://localhost:5432/postgres
 ````
-2) для миграции данных испольовался FlyWay
-3) файл с заданием можно найти в корневой папке проекта
+3) для миграции данных испольовался FlyWay
+4) файл с заданием можно найти в корневой папке проекта
+5) в application.yml в строчках 
+````
+    url: jdbc:postgresql://localhost:5432/postgres
+````
+вслучае если docker запущен не на localhost нужно указать тот порт, на которм запущен docker

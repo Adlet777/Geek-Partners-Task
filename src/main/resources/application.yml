@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    logging:
+      level:
+        org:flywaydb.core.internal: debug
+    locations: classpath:db/migration
+    validate-on-migrate: true
+    enabled: true
+    validate-migration-naming: true
+    user: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/postgres

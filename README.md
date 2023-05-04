@@ -20,3 +20,5 @@
     url: jdbc:postgresql://localhost:5432/postgres
 ````
 в случае если docker запущен не на localhost нужно указать тот хост, на котором запущен docker
+
+4/5/2023 9:40 - поправил сборку файлов Dockerfile и docker-compose.yml

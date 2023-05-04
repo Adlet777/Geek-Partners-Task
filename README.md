@@ -19,4 +19,4 @@
 ````
     url: jdbc:postgresql://localhost:5432/postgres
 ````
-вслучае если docker запущен не на localhost нужно указать тот порт, на которм запущен docker
+в случае если docker запущен не на localhost нужно указать тот хост, на котором запущен docker
